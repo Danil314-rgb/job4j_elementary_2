@@ -12,12 +12,12 @@ public class Slash {
     }
 
     public static void draw(int size) {
-        int a = 0;
-        int b = size - 1;
+        int leftRight = 0;
+        int rightLeft = size - 1;
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = (row + cell) == a;
-                boolean right = row + cell == b;
+                boolean left = (row + cell) == leftRight;
+                boolean right = row + cell == rightLeft;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
@@ -25,10 +25,10 @@ public class Slash {
                 } else {
                     System.out.print(" ");
                 }
-                a += 2;
+                leftRight += 2;
             }
             System.out.println();
-            a = 0;
+            leftRight = 0;
         }
         System.out.println();
     }
