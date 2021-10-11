@@ -10,17 +10,22 @@ public class DivideBySix {
     }
 
     public static String checkNumber(int number) {
+        String result;
         if (number % 3 == 0) {
             if (number % 2 == 0) {
-                return "Исходное число делится на 6.";
+                result = "Исходное число делится на 6.";
+                return result;
             } else {
-                return "Исходное число делится на 3, но не является четным.";
+                result = "Исходное число делится на 3, но не является четным.";
+                return result;
             }
         } else {
             if (number % 2 == 0) {
-                return "Исходное число не делится на 3, но является четным.";
+                result = "Исходное число не делится на 3, но является четным.";
+                return result;
             } else {
-                return "Исходное число не делится на 3 и не является четным.";
+                result = "Исходное число не делится на 3 и не является четным.";
+                return result;
             }
         }
     }
