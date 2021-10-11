@@ -14,19 +14,16 @@ public class DivideBySix {
         if (number % 3 == 0) {
             if (number % 2 == 0) {
                 result = "Исходное число делится на 6.";
-                return result;
             } else {
                 result = "Исходное число делится на 3, но не является четным.";
-                return result;
             }
         } else {
             if (number % 2 == 0) {
                 result = "Исходное число не делится на 3, но является четным.";
-                return result;
             } else {
                 result = "Исходное число не делится на 3 и не является четным.";
-                return result;
             }
         }
+        return result;
     }
 }
