@@ -8,6 +8,7 @@ public class ArrayDefinition {
         names[1] = "Ivan";
         names[2] = "Oleg";
         names[3] = "Bob";
+
         System.out.println(names[0]);
         System.out.println(names[1]);
         System.out.println(names[2]);
