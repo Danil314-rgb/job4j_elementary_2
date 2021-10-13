@@ -3,8 +3,12 @@ package array;
 public class ArrayDefinition {
 
     public static void main(String[] args) {
-        short[] ages = new short[10];
-        String[] surname = new String[100500];
-        float[] prices = new float[40];
+        int[] arr = new int[5];
+        for (int i = 0; i <= arr.length - 1; i++) {
+            arr[i] = i * 2 + 3;
+        }
+        for (int i = 0; i <= arr.length - 1; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }
