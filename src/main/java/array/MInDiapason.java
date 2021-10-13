@@ -12,3 +12,4 @@ public class MInDiapason {
         return min;
     }
 }
+
