@@ -49,7 +49,7 @@ public class FindLoopTest {
     public void when5In2Of4ThenMinus1() {
         int start = 2;
         int finish = 4;
-        int el = 5;
+        int el = 6;
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         int result = FindLoop.index(arr, el, start, finish);
         int expected = -1;
