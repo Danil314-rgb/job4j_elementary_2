@@ -2,6 +2,11 @@ package ru.job4j;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        char[] arr = {'a', 'b', 'c', 'd'};
+        calculate(arr, 'b', 1);
+    }
+
+    public static void calculate(char[] array, char c, int number) {
+
     }
 }
