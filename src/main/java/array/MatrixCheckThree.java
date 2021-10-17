@@ -2,12 +2,11 @@ package array;
 
 public class MatrixCheckThree {
 
-    public static boolean isWin(char[][] board) {
+    public static boolean isWin(char[][] matrix) {
         boolean result = false;
-        char[] arr = {'X', 'X', 'X', 'X', 'X'};
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][i] == 'X') {
-                if (MatrixCheck.monoHorizontal(board, i) || MatrixCheck.monoVertical(board, i)) {
+        for (int index = 0; index < matrix.length; index++) {
+            if (matrix[index][index] == 'X') {
+                if (MatrixCheck.monoHorizontal(matrix, index) || MatrixCheck.monoVertical(matrix, index)) {
                     result = true;
                     break;
                 }
