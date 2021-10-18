@@ -8,29 +8,32 @@ import static org.junit.Assert.*;
 public class MaxTest {
 
     @Test
-    public void whenL10R12Then12() {
-        int left = 10;
-        int right = 12;
-        int result = Max.max(left, right);
-        int expected = 12;
-        Assert.assertEquals(result, expected);
+    public void whenA10B21That21() {
+        int a = 10;
+        int b = 21;
+        int result = Max.max(a, b);
+        int expected = 21;
+        Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenL12R10Then12() {
-        int left = 12;
-        int right = 10;
-        int result = Max.max(left, right);
-        int expected = 12;
-        Assert.assertEquals(result, expected);
+    public void whenA10B21C12That21() {
+        int a = 10;
+        int b = 21;
+        int c = 12;
+        int result = Max.max(a, b, c);
+        int expected = 21;
+        Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenL12R12Then12() {
-        int left = 12;
-        int right = 12;
-        int result = Max.max(left, right);
+    public void whenA10B12C12D0That12() {
+        int a = 10;
+        int b = 12;
+        int c = 12;
+        int d = 0;
+        int result = Max.max(a, b, c, d);
         int expected = 12;
-        Assert.assertEquals(result, expected);
+        Assert.assertEquals(expected, result);
     }
 }

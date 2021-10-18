@@ -2,14 +2,32 @@ package condition;
 
 public class Max {
 
-    public static void main(String[] args) {
-        System.out.println(max(10, 12));
-        System.out.println(max(12, 10));
-        System.out.println(max(12, 12));
+    public static int max(int first, int second) {
+        return first > second ? first : second;
     }
 
-    public static int max(int left, int right) {
-        int result = left > right ? left : right;
+    public static int max(int first, int second, int third) {
+        int result = third;
+        if (first >= second && first >= third) {
+            result = first;
+        }
+        if (second >= first && second >= third) {
+            result = second;
+        }
+        return result;
+    }
+
+    public static int max(int first, int second, int third, int four) {
+        int result = four;
+        if (first >= second && first >= third && first >= four) {
+            result = first;
+        }
+        if (second >= first && second >= third && second >= four) {
+            result = second;
+        }
+        if (third >= first && third >= second && third >= four) {
+            result = third;
+        }
         return result;
     }
 }
