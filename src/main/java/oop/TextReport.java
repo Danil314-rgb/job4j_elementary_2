@@ -6,3 +6,4 @@ public class TextReport {
         return name + System.lineSeparator() + body;
     }
 }
+
