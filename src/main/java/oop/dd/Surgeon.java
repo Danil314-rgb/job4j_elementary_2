@@ -7,4 +7,8 @@ public class Surgeon extends  Doctor {
     public int getNumberOperations(int numberOperations) {
         return numberOperations;
     }
+
+    public Surgeon(int numberOperations) {
+        this.numberOperations = numberOperations;
+    }
 }

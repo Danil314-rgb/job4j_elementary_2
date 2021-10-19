@@ -7,4 +7,8 @@ public class Dentist extends Doctor {
     public int getClients(int clients) {
         return clients;
     }
+
+    public Dentist(int clients) {
+        this.clients = clients;
+    }
 }

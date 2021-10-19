@@ -7,4 +7,8 @@ public class Programmer extends Engineer {
     public String getPosition(String position) {
         return position;
     }
+
+    public Programmer(String position) {
+        this.position = position;
+    }
 }

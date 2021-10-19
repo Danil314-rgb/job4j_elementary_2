@@ -7,4 +7,8 @@ public class Engineer extends Profession {
     public int getProject(int finishedProject) {
         return finishedProject;
     }
+
+    public Engineer() {
+        this.finishedProject = finishedProject;
+    }
 }

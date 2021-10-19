@@ -7,4 +7,8 @@ public class Builder extends Engineer {
     public double getSalary(double salary) {
         return salary;
     }
+
+    public Builder(double salary) {
+        this.salary = salary;
+    }
 }
