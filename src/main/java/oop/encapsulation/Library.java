@@ -12,23 +12,19 @@ public class Library {
         books[1] = book2;
         books[2] = book3;
         books[3] = book4;
-        for (int index = 0; index < books.length; index++) {
-            Book book = books[index];
-            System.out.println(book.getName() + " - " + book.getCount());
+        for (Book item : books) {
+            System.out.println(item.getName() + " - " + item.getCount());
         }
         books[0] = book4;
         books[3] = book1;
         System.out.println("Replace book4 to book1");
-        for (int index = 0; index < books.length; index++) {
-            Book book = books[index];
-            System.out.println(book.getName() + " - " + book.getCount());
+        for (Book item : books) {
+            System.out.println(item.getName() + " - " + item.getCount());
         }
         System.out.println("Shown only name book = Clean code");
-
-        for (int index = 0; index < books.length; index++) {
-            Book book = books[index];
-            if (book.getName().equals("Clean code")) {
-                System.out.println(book.getName() + " - " + book.getCount());
+        for (Book item : books) {
+            if ("Clean code".equals(item.getName())) {
+                System.out.println(item.getName() + " - " + item.getCount());
             }
         }
     }
