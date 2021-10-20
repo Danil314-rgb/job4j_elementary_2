@@ -4,11 +4,12 @@ public class Programmer extends Engineer {
 
     private String position;
 
-    public String getPosition(String position) {
-        return position;
+    public Programmer(String position) {
+        super();
+        this.position = position;
     }
 
-    public Programmer(String position) {
-        this.position = position;
+    public String getPosition(String position) {
+        return position;
     }
 }

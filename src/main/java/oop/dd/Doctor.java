@@ -4,7 +4,13 @@ public class Doctor extends Profession {
 
     private double experience;
 
-    public Doctor() {
+    public Doctor(double experience) {
+        super();
         this.experience = experience;
     }
+
+    public Doctor() {
+
+    }
+
 }
