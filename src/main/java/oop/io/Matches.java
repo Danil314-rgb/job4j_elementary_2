@@ -13,11 +13,6 @@ public class Matches {
             String player = turn ? "Первый игрок" : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
-            while (matches > 3 || matches < 0) {
-                System.out.println("Ты взял количество спичек не по правилам!");
-                System.out.println("Возьми от 1 до 3 спичек!");
-                matches = Integer.parseInt(input.nextLine());
-            }
             turn = !turn;
             count = count - matches;
             System.out.println("Осталась спичек: " + count);
