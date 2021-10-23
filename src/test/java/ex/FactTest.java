@@ -10,4 +10,5 @@ public class FactTest {
     public void whenMinus5ThenException() {
         Fact.calc(-5);
     }
+
 }
