@@ -7,16 +7,18 @@ public class FindEl {
         for (int i = 0; i < value.length; i++) {
             if (value[i].equals(key)) {
                 result = i;
+                break;
             }
         }
         if (result == -1) {
-            throw new ElementNotFoundException("Такого элемента нет");
+            throw new ElementNotFoundException("Элемент не найден");
         }
-        return  result;
+        return result;
     }
 
     public static void main(String[] args) {
         String[] str = {"aa", "aa", "a", "aaaa"};
+
         try {
             System.out.println(indexOf(str, "b"));
         } catch (ElementNotFoundException e) {
