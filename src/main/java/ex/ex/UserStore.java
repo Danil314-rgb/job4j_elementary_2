@@ -3,20 +3,18 @@ package ex.ex;
 public class UserStore {
     public static User findUser(User[] users, String logic) throws UserNotFoundException {
         for (int i = 0; i < users.length; i++) {
-            if (!users[i].getUsername().equals(logic)) {
-                throw new UserNotFoundException("Пользователь не найдет");
+            if (users[i].getUsername().equals(logic)) {
+                return users[i];
             }
-            return users[i];
         }
-        return null;
+        throw new UserNotFoundException("Пользователь не найдет");
     }
 
     public static boolean validate(User user) throws UserInvalidException {
-        if (user.isValid()) {
+        if (user.isValid() && user.getUsername().length() > 2) {
             return true;
-        } else {
-            throw new UserInvalidException("Пользователь не валидный");
         }
+        throw new UserInvalidException("Пользователь не валидный");
     }
 
     public static void main(String[] args) {
@@ -30,9 +28,6 @@ public class UserStore {
             ei.printStackTrace();
         } catch (UserNotFoundException en) {
             en.printStackTrace();
-        } catch (Exception ex) {
-            ex.printStackTrace();
         }
-
     }
 }
