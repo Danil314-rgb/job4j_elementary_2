@@ -2,7 +2,7 @@ package sorti;
 
 import java.util.Comparator;
 
-public class JobDescByNameLn implements Comparator<Job> { // по убыванию по длине имени
+public class JobDescByNameLn implements Comparator<Job> {
 
     @Override
     public int compare(Job o1, Job o2) {
