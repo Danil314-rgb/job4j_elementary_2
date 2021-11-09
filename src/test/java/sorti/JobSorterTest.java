@@ -36,10 +36,10 @@ public class JobSorterTest {
     public void whenDescByNameAndDescPriority() {
         Comparator<Job> comNamePriority = new JobDescByName().thenComparing(new JobDescByPriority());
         int res = comNamePriority.compare(
-                new Job("Impl task", 0),
+                new Job("Fix bug", 0),
                 new Job("Fix bug", 1)
         );
-        assertThat(res, lessThan(0));
+        assertThat(res, greaterThan(0));
     }
 
     @Test
