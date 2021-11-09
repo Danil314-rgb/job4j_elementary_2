@@ -36,3 +36,4 @@ public class User implements Comparable<User> {
         return res == 0 ? Integer.compare(this.age, o.age) : res;
     }
 }
+
