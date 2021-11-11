@@ -2,11 +2,24 @@ package bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает модель пользователя банка.
+ * @author Danil Bodrov
+ * @version 1.0
+ */
 public class User {
 
+    /**
+     * Хранение паспортных данных passport типа String и ФИО пользователя username типа String
+     */
     private String passport;
     private String username;
 
+    /**
+     * Конструктор, который инициализирует поля класса passport и balance
+     * @param passport
+     * @param username
+     */
     public User(String passport, String username) {
         this.passport = passport;
         this.username = username;
